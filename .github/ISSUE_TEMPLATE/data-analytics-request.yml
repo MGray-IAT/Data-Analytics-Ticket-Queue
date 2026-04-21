@@ -1,0 +1,131 @@
+name: Data Analytics Request
+description: Submit a data, tracking, or analytics request
+title: "[Data Request]: "
+labels: ["queue:incoming", "type:data-analytics"]
+
+body:
+
+  # 📝 REQUEST DESCRIPTION
+  - type: textarea
+    id: description
+    attributes:
+      label: Request Description
+      description: Clearly describe what you need
+      placeholder: e.g. Track button clicks on checkout to analyze drop-off
+    validations:
+      required: true
+
+  # 🎯 BUSINESS GOAL
+  - type: textarea
+    id: business_goal
+    attributes:
+      label: Business Question / Goal
+      description: What decision or insight are you trying to get?
+      placeholder: e.g. Are users dropping off after clicking checkout?
+    validations:
+      required: true
+
+  # 👥 AUDIENCE / SCOPE
+  - type: input
+    id: audience
+    attributes:
+      label: Audience / Scope
+      description: Who or what does this apply to?
+      placeholder: e.g. All users, mobile users, premium users
+
+  # 📍 LOCATION
+  - type: input
+    id: location
+    attributes:
+      label: Page / Feature / Area
+      description: Where is this happening?
+      placeholder: e.g. Checkout page, login flow
+
+  # ⚠️ TAGGING STATUS
+  - type: markdown
+    attributes:
+      value: "### ⚠️ Tagging Status (Select ONE only)"
+
+  - type: checkboxes
+    id: tagging_status
+    attributes:
+      label: Current State
+      description: Please select only ONE option
+      options:
+        - label: Needs tagging (no tracking currently exists)
+        - label: Tagged but NOT tracking correctly
+        - label: Tagged and tracking correctly
+
+  # 🔒 CONFIRMATION
+  - type: checkboxes
+    id: tagging_confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have selected only ONE tagging status above
+          required: true
+
+  # 📊 DASHBOARD / TRACKING
+  - type: textarea
+    id: dashboard
+    attributes:
+      label: Dashboard / Tracking Location
+      description: If tagged or tracked, include the dashboard or tool where this exists
+      placeholder: e.g. Datadog dashboard link, GA4 report, Power BI link
+
+  # 🔍 EXPECTED VS ACTUAL
+  - type: textarea
+    id: expected_vs_actual
+    attributes:
+      label: Expected vs Actual Behavior (if applicable)
+      description: What should be happening vs what you are seeing
+
+  # 📅 MONITORING RANGE
+  - type: input
+    id: date_range
+    attributes:
+      label: Monitoring Date Range
+      description: What timeframe should be analyzed or monitored?
+      placeholder: e.g. Last 7 days, 03/01 - 03/15, ongoing
+
+  # ⏱️ URGENCY
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: When is this needed?
+      options:
+        - ASAP (blocking)
+        - This week
+        - This month
+        - No specific deadline
+
+  # 🔁 REQUEST TYPE
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request Type
+      options:
+        - One-time analysis
+        - Ongoing monitoring
+        - Dashboard / report creation
+
+  # 📎 EXISTING DATA
+  - type: textarea
+    id: existing_data
+    attributes:
+      label: Existing Data / Sources
+      description: Any known dashboards, reports, or tools already used?
+
+  # 👤 STAKEHOLDER
+  - type: input
+    id: stakeholder
+    attributes:
+      label: Stakeholder / Request Owner
+      placeholder: Who should be contacted for questions?
+
+  # 📎 ADDITIONAL DETAILS
+  - type: textarea
+    id: additional_details
+    attributes:
+      label: Additional Context
+      description: Add links, screenshots, or anything else helpful
