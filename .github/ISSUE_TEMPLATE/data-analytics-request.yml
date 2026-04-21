@@ -11,7 +11,7 @@ body:
     attributes:
       label: Request Description
       description: Clearly describe what you need
-      placeholder: e.g. Track button clicks on checkout to analyze drop-off
+      placeholder: 
     validations:
       required: true
 
@@ -21,7 +21,7 @@ body:
     attributes:
       label: Business Question / Goal
       description: What decision or insight are you trying to get?
-      placeholder: e.g. Are users dropping off after clicking checkout?
+      placeholder: 
     validations:
       required: true
 
@@ -31,7 +31,7 @@ body:
     attributes:
       label: Audience / Scope
       description: Who or what does this apply to?
-      placeholder: e.g. All users, mobile users, premium users
+      placeholder: 
 
   # 📍 LOCATION
   - type: input
@@ -39,7 +39,7 @@ body:
     attributes:
       label: Page / Feature / Area
       description: Where is this happening?
-      placeholder: e.g. Checkout page, login flow
+      placeholder: 
 
   # ⚠️ TAGGING STATUS
   - type: markdown
