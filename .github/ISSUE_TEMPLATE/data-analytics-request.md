@@ -10,7 +10,7 @@ assignees: ''
 ## What problem are you trying to solve?
 
 
-## What questions do you need answers to?
+## What questions do you need answered?
 
 
 ## Tool
