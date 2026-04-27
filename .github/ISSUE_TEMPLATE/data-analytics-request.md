@@ -2,7 +2,7 @@
 name: Horizon Data Analytics Request
 about: Submit a data, tracking, or analytics request
 title: ''
-labels: 'Horizon, Needs-refinement'
+labels: 'Horizon, needs-refinement'
 assignees: ''
 
 ---
