@@ -14,7 +14,7 @@ assignees: ''
 
 
 ## Tool
-_What tool does this apply to? (All Tools is an acceptable answer)_
+_What tool does this apply to?_
 
 ## Page / Feature / Area
 _Where is this happening?_
