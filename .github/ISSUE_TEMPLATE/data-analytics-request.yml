@@ -1,6 +1,6 @@
-name: Data Analytics Request
+name: Horizon Data Analytics Request
 description: Submit a data, tracking, or analytics request
-title: "[Horizon Data Analytics Request]: "
+title: "[Data Request]: "
 labels: ["queue:incoming", "type:data-analytics"]
 
 body:
